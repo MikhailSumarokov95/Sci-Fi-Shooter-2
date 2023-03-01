@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4214762433135912
 Transform:
@@ -106,6 +106,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Hud_Text_04 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1898228538971292, guid: 1852ce2a8e3023f43bd46803526138f4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4147788145604248, guid: 1852ce2a8e3023f43bd46803526138f4, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -181,6 +185,10 @@ PrefabInstance:
     - target: {fileID: 1705497213751312, guid: f171da8659e7ec14e9a4df6cdde2c7f2, type: 3}
       propertyPath: m_Name
       value: SM_Hud_Reticle_08
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705497213751312, guid: f171da8659e7ec14e9a4df6cdde2c7f2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4051100774748624, guid: f171da8659e7ec14e9a4df6cdde2c7f2, type: 3}
       propertyPath: m_RootOrder
@@ -262,6 +270,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Hud_Barrier_01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1824812887604472, guid: 9ad20ca03227a374fa44c9ae60608b6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4292910838336368, guid: 9ad20ca03227a374fa44c9ae60608b6c, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -341,6 +353,10 @@ PrefabInstance:
     - target: {fileID: 1824812887604472, guid: 9ad20ca03227a374fa44c9ae60608b6c, type: 3}
       propertyPath: m_Name
       value: SM_Hud_Barrier_01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824812887604472, guid: 9ad20ca03227a374fa44c9ae60608b6c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4292910838336368, guid: 9ad20ca03227a374fa44c9ae60608b6c, type: 3}
       propertyPath: m_RootOrder
@@ -422,6 +438,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Hud_Text_02
       objectReference: {fileID: 0}
+    - target: {fileID: 1852877800123588, guid: df9a9ff89be102f46861b6d72ac62ed2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4798481870845170, guid: df9a9ff89be102f46861b6d72ac62ed2, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -497,6 +517,10 @@ PrefabInstance:
     - target: {fileID: 1784553658212784, guid: d1fa72b6cbaee5c4db926fdaa3cfedf4, type: 3}
       propertyPath: m_Name
       value: SM_Hud_Text_Arrow_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1784553658212784, guid: d1fa72b6cbaee5c4db926fdaa3cfedf4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4099174021481020, guid: d1fa72b6cbaee5c4db926fdaa3cfedf4, type: 3}
       propertyPath: m_RootOrder
@@ -574,6 +598,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Hud_Text_04 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1898228538971292, guid: 1852ce2a8e3023f43bd46803526138f4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4147788145604248, guid: 1852ce2a8e3023f43bd46803526138f4, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -649,6 +677,10 @@ PrefabInstance:
     - target: {fileID: 1784553658212784, guid: d1fa72b6cbaee5c4db926fdaa3cfedf4, type: 3}
       propertyPath: m_Name
       value: SM_Hud_Text_Arrow_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1784553658212784, guid: d1fa72b6cbaee5c4db926fdaa3cfedf4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4099174021481020, guid: d1fa72b6cbaee5c4db926fdaa3cfedf4, type: 3}
       propertyPath: m_RootOrder
@@ -726,6 +758,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Hud_Text_02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1852877800123588, guid: df9a9ff89be102f46861b6d72ac62ed2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4798481870845170, guid: df9a9ff89be102f46861b6d72ac62ed2, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -801,6 +837,10 @@ PrefabInstance:
     - target: {fileID: 1930038595592302, guid: 7b3220f81ebb4a042a7fb3af062020d8, type: 3}
       propertyPath: m_Name
       value: SM_Hud_Reticle_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1930038595592302, guid: 7b3220f81ebb4a042a7fb3af062020d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4817317956064770, guid: 7b3220f81ebb4a042a7fb3af062020d8, type: 3}
       propertyPath: m_RootOrder
@@ -882,6 +922,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Hud_Text_03
       objectReference: {fileID: 0}
+    - target: {fileID: 1465653516031016, guid: 6ab3df218ef63eb4ca0d468cd332dbef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4563309639234490, guid: 6ab3df218ef63eb4ca0d468cd332dbef, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -961,6 +1005,10 @@ PrefabInstance:
     - target: {fileID: 1655952056248522, guid: f27d62e9b72774f4c83740b45d58b052, type: 3}
       propertyPath: m_Name
       value: SM_Hud_Box_03 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1655952056248522, guid: f27d62e9b72774f4c83740b45d58b052, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4516757699321210, guid: f27d62e9b72774f4c83740b45d58b052, type: 3}
       propertyPath: m_RootOrder
