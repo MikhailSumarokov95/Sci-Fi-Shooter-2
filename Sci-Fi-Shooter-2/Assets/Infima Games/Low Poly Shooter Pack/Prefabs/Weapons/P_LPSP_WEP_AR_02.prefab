@@ -412,12 +412,12 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 65c6dfa7bd41bc543b1ab18885920dd8, type: 2}
-  - {fileID: 2100000, guid: d6af5f41eb8b56141a99ca7e730c8014, type: 2}
-  - {fileID: 2100000, guid: 65c6dfa7bd41bc543b1ab18885920dd8, type: 2}
-  - {fileID: 2100000, guid: 0d41f96a378bdab4192a7ed914e73fb0, type: 2}
-  - {fileID: 2100000, guid: 65c6dfa7bd41bc543b1ab18885920dd8, type: 2}
-  - {fileID: 2100000, guid: d6af5f41eb8b56141a99ca7e730c8014, type: 2}
+  - {fileID: 2100000, guid: 0a8e0711743869343a68d58747c42f1a, type: 2}
+  - {fileID: 2100000, guid: e002033bf00e3564781406b101a2fda6, type: 2}
+  - {fileID: 2100000, guid: 0a8e0711743869343a68d58747c42f1a, type: 2}
+  - {fileID: 2100000, guid: 738331d397eda8b41a936b9620ba361b, type: 2}
+  - {fileID: 2100000, guid: 0a8e0711743869343a68d58747c42f1a, type: 2}
+  - {fileID: 2100000, guid: e002033bf00e3564781406b101a2fda6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -682,7 +682,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 65c6dfa7bd41bc543b1ab18885920dd8, type: 2}
+      objectReference: {fileID: 2100000, guid: 0a8e0711743869343a68d58747c42f1a, type: 2}
     - target: {fileID: 1145889618073004828, guid: c472be678311843468e98214f36dec77,
         type: 3}
       propertyPath: sprite
@@ -703,7 +703,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 65c6dfa7bd41bc543b1ab18885920dd8, type: 2}
+      objectReference: {fileID: 2100000, guid: 0a8e0711743869343a68d58747c42f1a, type: 2}
     - target: {fileID: 1733890376339340888, guid: c472be678311843468e98214f36dec77,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -729,7 +729,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 65c6dfa7bd41bc543b1ab18885920dd8, type: 2}
+      objectReference: {fileID: 2100000, guid: 0a8e0711743869343a68d58747c42f1a, type: 2}
     - target: {fileID: 3924303889716838361, guid: c472be678311843468e98214f36dec77,
         type: 3}
       propertyPath: sprite
@@ -821,7 +821,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 65c6dfa7bd41bc543b1ab18885920dd8, type: 2}
+      objectReference: {fileID: 2100000, guid: 0a8e0711743869343a68d58747c42f1a, type: 2}
     - target: {fileID: 4428515403314268477, guid: c472be678311843468e98214f36dec77,
         type: 3}
       propertyPath: m_Name
@@ -868,7 +868,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 65c6dfa7bd41bc543b1ab18885920dd8, type: 2}
+      objectReference: {fileID: 2100000, guid: 0a8e0711743869343a68d58747c42f1a, type: 2}
     - target: {fileID: 7882240947646819881, guid: c472be678311843468e98214f36dec77,
         type: 3}
       propertyPath: sprite
@@ -905,12 +905,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 65c6dfa7bd41bc543b1ab18885920dd8, type: 2}
+      objectReference: {fileID: 2100000, guid: 0a8e0711743869343a68d58747c42f1a, type: 2}
     - target: {fileID: 8474311118552467365, guid: c472be678311843468e98214f36dec77,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 65c6dfa7bd41bc543b1ab18885920dd8, type: 2}
+      objectReference: {fileID: 2100000, guid: 0a8e0711743869343a68d58747c42f1a, type: 2}
     m_RemovedComponents:
     - {fileID: 6228105118461251015, guid: c472be678311843468e98214f36dec77, type: 3}
     - {fileID: 603904550305514138, guid: c472be678311843468e98214f36dec77, type: 3}
@@ -1085,7 +1085,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d6af5f41eb8b56141a99ca7e730c8014, type: 2}
+      objectReference: {fileID: 2100000, guid: 0a8e0711743869343a68d58747c42f1a, type: 2}
     - target: {fileID: 919132149155446097, guid: 86ea4de10de239446b8c622e33af1c4d,
         type: 3}
       propertyPath: m_Name
@@ -1193,7 +1193,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 65c6dfa7bd41bc543b1ab18885920dd8, type: 2}
+      objectReference: {fileID: 2100000, guid: 0a8e0711743869343a68d58747c42f1a, type: 2}
     - target: {fileID: 919132149155446097, guid: f9733668ef9d0ba40a20b0dee48813d9,
         type: 3}
       propertyPath: m_Name
@@ -1294,7 +1294,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 65c6dfa7bd41bc543b1ab18885920dd8, type: 2}
+      objectReference: {fileID: 2100000, guid: 0a8e0711743869343a68d58747c42f1a, type: 2}
     - target: {fileID: 2012087999900860783, guid: 7a743bcd0df24704ebbb7b5f8c3b15c0,
         type: 3}
       propertyPath: sprite
@@ -1305,7 +1305,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 65c6dfa7bd41bc543b1ab18885920dd8, type: 2}
+      objectReference: {fileID: 2100000, guid: 0a8e0711743869343a68d58747c42f1a, type: 2}
     - target: {fileID: 3366728951027924913, guid: 7a743bcd0df24704ebbb7b5f8c3b15c0,
         type: 3}
       propertyPath: sprite
@@ -1321,7 +1321,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 65c6dfa7bd41bc543b1ab18885920dd8, type: 2}
+      objectReference: {fileID: 2100000, guid: 0a8e0711743869343a68d58747c42f1a, type: 2}
     - target: {fileID: 8961596425190805619, guid: 7a743bcd0df24704ebbb7b5f8c3b15c0,
         type: 3}
       propertyPath: sprite
@@ -1388,12 +1388,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 65c6dfa7bd41bc543b1ab18885920dd8, type: 2}
+      objectReference: {fileID: 2100000, guid: 0a8e0711743869343a68d58747c42f1a, type: 2}
     - target: {fileID: 1157167080681653570, guid: 613eeb9dc59c9934392391ae63fffa9d,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 65c6dfa7bd41bc543b1ab18885920dd8, type: 2}
+      objectReference: {fileID: 2100000, guid: 0a8e0711743869343a68d58747c42f1a, type: 2}
     - target: {fileID: 1366133415999661822, guid: 613eeb9dc59c9934392391ae63fffa9d,
         type: 3}
       propertyPath: m_RootOrder
@@ -1470,7 +1470,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 65c6dfa7bd41bc543b1ab18885920dd8, type: 2}
+      objectReference: {fileID: 2100000, guid: 0a8e0711743869343a68d58747c42f1a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 613eeb9dc59c9934392391ae63fffa9d, type: 3}
 --- !u!114 &1408471391731878269 stripped
@@ -1615,12 +1615,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 65c6dfa7bd41bc543b1ab18885920dd8, type: 2}
+      objectReference: {fileID: 2100000, guid: 0a8e0711743869343a68d58747c42f1a, type: 2}
     - target: {fileID: 7747814119195158160, guid: afa31145111d8f64e8ffb5ca3a8e739b,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 65c6dfa7bd41bc543b1ab18885920dd8, type: 2}
+      objectReference: {fileID: 2100000, guid: 0a8e0711743869343a68d58747c42f1a, type: 2}
     - target: {fileID: 8775069282209267756, guid: afa31145111d8f64e8ffb5ca3a8e739b,
         type: 3}
       propertyPath: sprite
