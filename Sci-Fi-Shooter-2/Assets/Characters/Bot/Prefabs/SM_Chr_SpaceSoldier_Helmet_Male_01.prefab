@@ -973,7 +973,7 @@ GameObject:
   - component: {fileID: -3501857442814489585}
   m_Layer: 0
   m_Name: SM_Chr_SpaceSoldier_Helmet_Male_01
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1007,7 +1007,7 @@ Animator:
   m_GameObject: {fileID: 7391749937303399282}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: c8c20564eb982f84a96a0d4d8e357cc5, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dbe79a9b9a7b3b5489f013faef04e70a, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1074,7 +1074,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eyesTr: {fileID: 7003917679816085542}
   angleVisibility: 5
-  maxSpeed: 1.5
+  maxSpeedAnimation: 1.5
   timeDo: 0.1
 --- !u!114 &6499333492064323084
 MonoBehaviour:

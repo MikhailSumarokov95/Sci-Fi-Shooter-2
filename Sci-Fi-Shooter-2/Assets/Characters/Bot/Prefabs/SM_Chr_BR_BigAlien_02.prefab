@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 1994871862235006748}
   m_Layer: 0
   m_Name: SM_Chr_BR_BigAlien_02
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -150,7 +150,7 @@ Animator:
   m_GameObject: {fileID: 8383468700665803931}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 44202c79934aa8c45b2495a49b6e99b1, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4ea2283ea6db7f54c82d2eb553897f73, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -217,7 +217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eyesTr: {fileID: 5166821171981178116}
   angleVisibility: 5
-  maxSpeed: 1.5
+  maxSpeedAnimation: 1.5
   timeDo: 0.1
 --- !u!114 &7683107334260429693
 MonoBehaviour:
@@ -254,7 +254,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.3
-  m_Speed: 3.5
+  m_Speed: 1.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120

@@ -7,7 +7,7 @@ public class AIBotController : MonoBehaviour
     [SerializeField] private Transform eyesTr;
     [Range(0f, 30f)]
     [SerializeField] private float angleVisibility = 5f;
-    [SerializeField] private float maxSpeed = 1.5f;
+    [SerializeField] private float maxSpeedAnimation = 1.5f;
     [SerializeField] private float timeDo = 0.5f;
     private Transform _target;
     private CapsuleCollider _targetCol;
@@ -96,7 +96,7 @@ public class AIBotController : MonoBehaviour
 
     private void RandomizerSpeed()
     {
-        var speed = Random.Range(1, maxSpeed);
+        var speed = Random.Range(1, maxSpeedAnimation);
         GetComponent<Animator>().speed *= speed;
         GetComponent<NavMeshAgent>().speed *= speed;
     }

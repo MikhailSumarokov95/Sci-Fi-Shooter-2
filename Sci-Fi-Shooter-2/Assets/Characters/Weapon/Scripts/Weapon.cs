@@ -26,8 +26,10 @@ namespace Bot
         {
             IsAttacking = true;
             _isPostShotDelay = true;
+
             yield return new WaitUntil(() => _animator.GetCurrentAnimatorStateInfo(0).IsName("Attack"));
             yield return new WaitForSecondsRealtime(_animator.GetCurrentAnimatorStateInfo(0).length);
+
             _isPostShotDelay = false;
             IsAttacking = false;
         }
