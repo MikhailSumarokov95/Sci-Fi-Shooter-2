@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Sugar Games
-  productName: Rainbow Shooter
+  productName: Sci-Fi Shooter
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -529,8 +529,8 @@ PlayerSettings:
   openGLRequireES31AEP: 0
   openGLRequireES32: 0
   m_TemplateCustomTags:
-    PROJECT_ID: 3636
-    TOKEN: x4uRy7Tv4dpkTPzl5MfbLoLOyujmQVyw
+    PROJECT_ID: 3794
+    TOKEN: pIOehPgk6Du5TB3oX3VK1ZVyiu88MWhN
     _SHOW_PRELOADER_AD: true
   mobileMTRendering:
     Android: 1

@@ -4,13 +4,23 @@ using System.Collections;
 
 public class RangedWeapon : Weapon
 {
+    [SerializeField] private int magazineSize = 20;
+
+    [Range(0, 100)]
+    [SerializeField] private int hitProbability = 50;
+
+    [Title(label: "Bullet")]
+
     [SerializeField] private GameObject bulletPrefs;
     [SerializeField] private float bulletImpulse;
     [SerializeField] private Transform barrel;
-    [SerializeField] private int magazineSize = 20;
+
+    [Title(label: "Fire Effects")]
+
     [SerializeField] private GameObject prefabFlashParticles;
     [SerializeField] private int flashParticlesCount = 5;
     [SerializeField] private AudioSource fireAudioPref;
+
     private int _restOfBulletInMagazine;
     private ParticleSystem particles;
 
@@ -42,12 +52,6 @@ public class RangedWeapon : Weapon
 
         if (_isPostShotDelay) return;
 
-        var targetAttack = targetObj.transform.position + 
-            new Vector3(0f, targetObj.GetComponent<CapsuleCollider>().height * 0.9f, 0f) - barrel.transform.position;
-
-        var bullet = Instantiate(bulletPrefs, barrel.position, Quaternion.LookRotation(targetAttack));
-        bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * bulletImpulse;
-
         Effect();
 
         _animator.SetTrigger("Attack");
@@ -55,6 +59,14 @@ public class RangedWeapon : Weapon
         _restOfBulletInMagazine--;
 
         StartCoroutine(WaitPostShotDelay());
+
+        if (Random.Range(0, 100) > hitProbability) return;
+
+        var targetAttack = targetObj.transform.position +
+            new Vector3(0f, targetObj.GetComponent<CapsuleCollider>().height * 0.9f, 0f) - barrel.transform.position;
+
+        var bullet = Instantiate(bulletPrefs, barrel.position, Quaternion.LookRotation(targetAttack));
+        bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * bulletImpulse;
     }
 
     public void Effect()
