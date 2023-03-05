@@ -1847,7 +1847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbb77fe6eb69145429f460a66868454a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _distanceAttack: 20
+  _distanceAttack: 50
   bulletPrefs: {fileID: 4049326381340815823, guid: 740b50858fb7fac4e8cbfde64b6adc96,
     type: 3}
   bulletImpulse: 400

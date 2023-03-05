@@ -8,12 +8,18 @@ public class SpawnManager : MonoBehaviour
     public Action<Life[]> OnWaveSpawned;
     public Action OnWavesOver;
     public Action OnWaveEnd;
+
+    [Title(label: "Spawn Setting")]
+
+    [SerializeField] private SpawnBot[] spawnBots;
+    [SerializeField] private SpawnBot spawnBoss;
+
+    [Title(label: "Wave Setting")]
+
     [SerializeField] private int delayAfterEndWave = 6;
-    [SerializeField] private EnemySpawn[] enemiesSpawn;
-    [SerializeField] private AIBotController boss;
     [SerializeField] private int countWave = 3;
     [SerializeField] private int plusEnemyWithLevel = 1;
-    [SerializeField] private Transform[] enemySpawnPoints;
+
     private Life[] _currentEnemyLife;
     private bool _isAllEnemiesKilled;
     private LevelManager _levelManager;
@@ -42,7 +48,7 @@ public class SpawnManager : MonoBehaviour
             yield return new WaitUntil(() => _levelManager.StateGame == LevelManager.State.Game);
             NumberWave ++;
             _isAllEnemiesKilled = false;
-            _currentEnemyLife = SpawnEnemies(enemiesSpawn);
+            _currentEnemyLife = SpawnEnemies(spawnBots);
 
             OnWaveSpawned?.Invoke(_currentEnemyLife);
             yield return new WaitUntil(() => _isAllEnemiesKilled);
@@ -52,32 +58,38 @@ public class SpawnManager : MonoBehaviour
         OnWavesOver?.Invoke();
     }
 
-    private Life[] SpawnEnemies(EnemySpawn[] enemies)
+    private Life[] SpawnEnemies(SpawnBot[] spawnEnemy)
     {
         var enemy = new List<Life>();
 
-        var numberSpawnPoint = 0;
-        for (var i = 0; i < enemies.Length; i ++)
+        for (var i = 0; i < spawnEnemy.Length; i ++)
         {
-            for (var j = 0; j < enemies[i].SpawnCount + _level.CurrentLevel * plusEnemyWithLevel; j++)
+            var numberSpawnPoint = 0;
+
+            for (var j = 0; j < spawnEnemy[i].Count + _level.CurrentLevel * plusEnemyWithLevel; j++)
             {
-                enemy.Add(Instantiate(enemies[i].Enemy.gameObject, enemySpawnPoints[numberSpawnPoint].position, enemySpawnPoints[numberSpawnPoint].rotation)
+                var spawnPoint = spawnEnemy[i].SpawnPoints[numberSpawnPoint];
+
+                enemy.Add(Instantiate(spawnEnemy[i].BotPrefs.gameObject, spawnPoint.position, spawnPoint.rotation)
                     .GetComponent<Life>());
+
                 numberSpawnPoint++;
-                numberSpawnPoint = MathPlus.SawChart(numberSpawnPoint, 0, enemySpawnPoints.Length - 1);
+                numberSpawnPoint = MathPlus.SawChart(numberSpawnPoint, 0, spawnEnemy[i].SpawnPoints.Length - 1);
             }
         }
-        numberSpawnPoint++;
+
 
         if (NumberWave == countWave)
-            enemy.Add(SpawnBoss(numberSpawnPoint));
+            enemy.Add(SpawnBoss());
 
         return enemy.ToArray();
     }
 
-    private Life SpawnBoss(int numberPointSpawn)
+    private Life SpawnBoss()
     { 
-        return Instantiate(boss.gameObject, enemySpawnPoints[numberPointSpawn].position, enemySpawnPoints[numberPointSpawn].rotation)
+        var spawnPoint = spawnBoss.SpawnPoints[0];
+
+        return Instantiate(spawnBoss.BotPrefs, spawnPoint.position, spawnPoint.rotation)
                     .GetComponent<Life>();
     }
 
@@ -87,5 +99,13 @@ public class SpawnManager : MonoBehaviour
             if (!enemy.IsDid) return false;
 
         return true;
+    }
+
+    [Serializable]
+    private class SpawnBot
+    {
+        public AIBotController BotPrefs;
+        public int Count;
+        public Transform[] SpawnPoints;
     }
 }
