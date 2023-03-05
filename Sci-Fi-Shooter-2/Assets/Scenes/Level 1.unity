@@ -32311,7 +32311,7 @@ MonoBehaviour:
   - Enemy: {fileID: -6115109703763733030, guid: e1dd0888f364bfc45a0b878215c8e77c,
       type: 3}
     SpawnCount: 0
-  boss: {fileID: 0}
+  boss: {fileID: -6238939772971522723, guid: 78692e8d98777364f8f251ac29dc7b7e, type: 3}
   countWave: 3
   plusEnemyWithLevel: 1
   enemySpawnPoints:
@@ -32467,11 +32467,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_LPSP_Inventory
       objectReference: {fileID: 0}
+    - target: {fileID: 5373528034721390598, guid: 9482e0a2ae6a92742bbe72e00f29f763,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8174372834435582359, guid: 9482e0a2ae6a92742bbe72e00f29f763,
         type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8761746993312849190, guid: 9482e0a2ae6a92742bbe72e00f29f763,
+        type: 3}
+      propertyPath: prefabFlashLight
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8761746993312849190, guid: 9482e0a2ae6a92742bbe72e00f29f763,
+        type: 3}
+      propertyPath: prefabFlashParticles
+      value: 
+      objectReference: {fileID: 4834526503407549940, guid: 2735bebe54c1f5a4096f5134a96f7e77,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9482e0a2ae6a92742bbe72e00f29f763, type: 3}
 --- !u!1 &6066672781617223318
@@ -34125,7 +34141,7 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: 16e474626b69d024f8bf7c812763932a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2100000, guid: d2b50733842bd7649b86d1d9694ce570, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16e474626b69d024f8bf7c812763932a, type: 3}
 --- !u!1 &7448017379134100420

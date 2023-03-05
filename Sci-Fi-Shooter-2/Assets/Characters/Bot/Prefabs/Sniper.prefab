@@ -1853,6 +1853,11 @@ MonoBehaviour:
   bulletImpulse: 400
   barrel: {fileID: 5026617760189082286}
   magazineSize: 1
+  prefabFlashParticles: {fileID: 4834526503407549940, guid: 2735bebe54c1f5a4096f5134a96f7e77,
+    type: 3}
+  flashParticlesCount: 5
+  fireAudioPref: {fileID: 9114974539581842908, guid: 92cb8aab003d2c540a7f65f89ebc057e,
+    type: 3}
 --- !u!1 &1015194781423648811
 GameObject:
   m_ObjectHideFlags: 0

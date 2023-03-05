@@ -4,17 +4,30 @@ using System.Collections;
 
 public class RangedWeapon : Weapon
 {
-    [SerializeField] protected GameObject bulletPrefs;
-    [SerializeField] protected float bulletImpulse;
-    [SerializeField] protected Transform barrel;
-    [SerializeField] protected int magazineSize = 20;
+    [SerializeField] private GameObject bulletPrefs;
+    [SerializeField] private float bulletImpulse;
+    [SerializeField] private Transform barrel;
+    [SerializeField] private int magazineSize = 20;
+    [SerializeField] private GameObject prefabFlashParticles;
+    [SerializeField] private int flashParticlesCount = 5;
+    [SerializeField] private AudioSource fireAudioPref;
     private int _restOfBulletInMagazine;
+    private ParticleSystem particles;
 
-    protected void Start()
+    private void Start()
     {
         base.Start();
 
         _restOfBulletInMagazine = magazineSize;
+
+        //Instantiate Particles.
+        GameObject spawnedParticlesPrefab = Instantiate(prefabFlashParticles, barrel);
+        //Reset the position.
+        spawnedParticlesPrefab.transform.localPosition = default;
+        //Reset the rotation.
+        spawnedParticlesPrefab.transform.localEulerAngles = default;
+
+        particles = spawnedParticlesPrefab.GetComponent<ParticleSystem>();
     }
 
     public override void Attack(GameObject targetObj)
@@ -31,6 +44,8 @@ public class RangedWeapon : Weapon
         var bullet = Instantiate(bulletPrefs, barrel.position, Quaternion.LookRotation(targetAttack));
         bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * bulletImpulse;
 
+        Effect();
+
         _animator.SetTrigger("Attack");
 
         _restOfBulletInMagazine--;
@@ -38,7 +53,16 @@ public class RangedWeapon : Weapon
         StartCoroutine(WaitPostShotDelay());
     }
 
-    protected IEnumerator Reloading()
+    public void Effect()
+    {
+        if (particles != null)
+            particles.Emit(flashParticlesCount);
+
+        var fireAudio = Instantiate(fireAudioPref, barrel);
+        Destroy(fireAudio, fireAudio.GetComponent<AudioSource>().clip.length);
+    }
+
+    private IEnumerator Reloading()
     {
         if (_animator != null) _animator.SetTrigger("Reload");
         _isReloading = true;
