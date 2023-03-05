@@ -3860,37 +3860,6 @@ Transform:
   m_Father: {fileID: 1022600685}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &589054366
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 589054367}
-  m_Layer: 0
-  m_Name: GameObject_15
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &589054367
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 589054366}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.25, y: 3.0100002, z: 11.3}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 739728318}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &590201856
 GameObject:
   m_ObjectHideFlags: 0
@@ -4171,8 +4140,6 @@ Transform:
   - {fileID: 1122902882}
   - {fileID: 54493738}
   - {fileID: 1900804217}
-  - {fileID: 776537016}
-  - {fileID: 589054367}
   m_Father: {fileID: 8289361162000089855}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4349,37 +4316,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 772603373}
   m_CullTransparentMesh: 0
---- !u!1 &776537015
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 776537016}
-  m_Layer: 0
-  m_Name: GameObject_14
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &776537016
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 776537015}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.5, y: 3.0100002, z: 11.3}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 739728318}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &777131965
 GameObject:
   m_ObjectHideFlags: 0
@@ -18515,8 +18451,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4324050590701505610}
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 5680445691104604549}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &4440482069683963208 stripped
 RectTransform:
@@ -19118,6 +19054,7 @@ Transform:
   - {fileID: 5680445691545097960}
   - {fileID: 5680445691706966508}
   - {fileID: 5680445692486213785}
+  - {fileID: 4324050591053444737}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -33915,11 +33852,77 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnBots:
+  - BotPrefs: {fileID: 2635806433600441700, guid: 4e3c4e54cc4c6ca41b1f1a676d13dfea,
+      type: 3}
+    Count: 1
+    SpawnPoints:
+    - {fileID: 1911687091}
+    - {fileID: 205101305}
+    - {fileID: 850872278}
+    - {fileID: 983542123}
+    - {fileID: 1715580370}
+    - {fileID: 2113431811}
+    - {fileID: 1135178038}
+    - {fileID: 1376895610}
+    - {fileID: 1773031830}
+    - {fileID: 777131966}
+    - {fileID: 1588191263}
+    - {fileID: 194384468}
+    - {fileID: 981444763}
+  - BotPrefs: {fileID: -1467012406765832777, guid: 59f519ae4f2801d4889cd8b05b1fac95,
+      type: 3}
+    Count: 1
+    SpawnPoints:
+    - {fileID: 820434191}
+    - {fileID: 1802731266}
+    - {fileID: 1747429799}
+    - {fileID: 171408868}
+    - {fileID: 1105332195}
+    - {fileID: 275936432}
+    - {fileID: 1045141301}
+    - {fileID: 205059266}
+    - {fileID: 1141024884}
+    - {fileID: 1506732850}
+    - {fileID: 1805335362}
+    - {fileID: 1489114629}
+    - {fileID: 1830689267}
+    - {fileID: 628286122}
+  - BotPrefs: {fileID: 1658097233275845831, guid: a9912cf1432b0f04988b7d3983dd617b,
+      type: 3}
+    Count: 1
+    SpawnPoints:
+    - {fileID: 1104037010}
+    - {fileID: 892341039}
+    - {fileID: 570243903}
+    - {fileID: 1043029608}
+    - {fileID: 1888523099}
+    - {fileID: 187952467}
+    - {fileID: 1003787192}
+    - {fileID: 1627782682}
+    - {fileID: 1286008778}
+    - {fileID: 31860274}
+    - {fileID: 483969637}
+    - {fileID: 1840776915}
+    - {fileID: 590201857}
+    - {fileID: 600296595}
   - BotPrefs: {fileID: -6115109703763733030, guid: e1dd0888f364bfc45a0b878215c8e77c,
       type: 3}
     Count: 1
     SpawnPoints:
     - {fileID: 427140529}
+    - {fileID: 1772466216}
+    - {fileID: 1331153090}
+    - {fileID: 1479724331}
+    - {fileID: 1960744605}
+    - {fileID: 1576411481}
+    - {fileID: 72512530}
+    - {fileID: 1181570489}
+    - {fileID: 1965790552}
+    - {fileID: 184185068}
+    - {fileID: 618452017}
+    - {fileID: 1122902882}
+    - {fileID: 54493738}
+    - {fileID: 1900804217}
   spawnBoss:
     BotPrefs: {fileID: -6238939772971522723, guid: 78692e8d98777364f8f251ac29dc7b7e,
       type: 3}
