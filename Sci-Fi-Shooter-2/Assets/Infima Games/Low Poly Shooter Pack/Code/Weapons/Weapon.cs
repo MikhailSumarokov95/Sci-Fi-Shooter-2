@@ -211,6 +211,8 @@ namespace InfimaGames.LowPolyShooterPack
 
         private AmmunitionShop[] _ammunitionShop;
 
+        private float _colliderRadiusCharacter;
+
         #endregion
 
         #region PROPERTIES
@@ -240,6 +242,8 @@ namespace InfimaGames.LowPolyShooterPack
             characterBehaviour = gameModeService.GetPlayerCharacter();
             //Cache the world camera. We use this in line traces.
             playerCamera = characterBehaviour.GetCameraWorld().transform;
+
+            _colliderRadiusCharacter = characterBehaviour.GetComponent<CapsuleCollider>().radius;
         }
 
         protected void OnEnable()
@@ -506,8 +510,11 @@ namespace InfimaGames.LowPolyShooterPack
                 //Convert to world space.
                 spreadValue = playerCamera.TransformDirection(spreadValue);
 
+                var offset = playerCamera.forward * _colliderRadiusCharacter * 2f;
+
                 //Spawn projectile from the projectile spawn point.
-                GameObject projectile = Instantiate(prefabProjectile, playerCamera.position, Quaternion.Euler(playerCamera.eulerAngles + spreadValue));
+                GameObject projectile = Instantiate(prefabProjectile, playerCamera.position + offset, Quaternion.Euler(playerCamera.eulerAngles + spreadValue));
+               
                 //Add velocity to the projectile.
                 projectile.GetComponent<Rigidbody>().velocity = projectile.transform.forward * projectileImpulse;
             }

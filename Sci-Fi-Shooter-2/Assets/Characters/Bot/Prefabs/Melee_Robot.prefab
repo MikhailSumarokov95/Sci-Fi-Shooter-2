@@ -790,7 +790,7 @@ GameObject:
   - component: {fileID: 6748254029416010615}
   - component: {fileID: -8121257439212019198}
   m_Layer: 0
-  m_Name: SM_Chr_BR_War_Robot_01
+  m_Name: Melee_Robot
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

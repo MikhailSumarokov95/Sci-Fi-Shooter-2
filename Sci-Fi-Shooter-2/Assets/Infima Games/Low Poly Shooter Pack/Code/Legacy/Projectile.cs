@@ -48,26 +48,27 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
 			if (collision.gameObject.GetComponent<Projectile>() != null)
 				return;
 
-			// //Ignore collision if bullet collides with "Player" tag
-			// if (collision.gameObject.CompareTag("Player")) 
-			// {
-			// 	//Physics.IgnoreCollision (collision.collider);
-			// 	Debug.LogWarning("Collides with player");
-			// 	//Physics.IgnoreCollision(GetComponent<Collider>(), GetComponent<Collider>());
-			//
-			// 	//Ignore player character collision, otherwise this moves it, which is quite odd, and other weird stuff happens!
-			// 	Physics.IgnoreCollision(collision.collider, GetComponent<Collider>());
-			//
-			// 	//Return, otherwise we will destroy with this hit, which we don't want!
-			// 	return;
-			// }
-			//
+			//Ignore collision if bullet collides with "Player" tag
+			if (collision.gameObject.CompareTag("Player"))
+			{
+				//Physics.IgnoreCollision (collision.collider);
+				Debug.LogWarning("Collides with player");
+				//Physics.IgnoreCollision(GetComponent<Collider>(), GetComponent<Collider>());
+
+				//Ignore player character collision, otherwise this moves it, which is quite odd, and other weird stuff happens!
+				Physics.IgnoreCollision(collision.collider, GetComponent<Collider>());
+
+				//Return, otherwise we will destroy with this hit, which we don't want!
+				return;
+			}
+
 			//If destroy on impact is false, start 
 			//coroutine with random destroy timer
 			if (!destroyOnImpact)
 			{
 				StartCoroutine(DestroyTimer());
 			}
+
 			//Otherwise, destroy bullet on impact
 			else
 			{
@@ -84,51 +85,9 @@ namespace InfimaGames.LowPolyShooterPack.Legacy
 
 				Destroy(gameObject);
 			}
+        }
 
-			//If bullet collides with "Blood" tag
-			else if (collision.transform.CompareTag("Blood"))
-			{
-				//Instantiate random impact prefab from array
-				Instantiate(bloodImpactPrefabs[Random.Range
-						(0, bloodImpactPrefabs.Length)], transform.position,
-					Quaternion.LookRotation(collision.contacts[0].normal));
-				//Destroy bullet object
-				Destroy(gameObject);
-			}
-
-
-			//If bullet collides with "Target" tag
-			else if (collision.transform.CompareTag("Target"))
-			{
-				//Toggle "isHit" on target object
-				collision.transform.gameObject.GetComponent
-					<TargetScript>().isHit = true;
-				//Destroy bullet object
-				Destroy(gameObject);
-			}
-
-			//If bullet collides with "ExplosiveBarrel" tag
-			else if (collision.transform.CompareTag("ExplosiveBarrel"))
-			{
-				//Toggle "explode" on explosive barrel object
-				collision.transform.gameObject.GetComponent
-					<ExplosiveBarrelScript>().explode = true;
-				//Destroy bullet object
-				Destroy(gameObject);
-			}
-
-			//If bullet collides with "GasTank" tag
-			else if (collision.transform.CompareTag("GasTank"))
-			{
-				//Toggle "isHit" on gas tank object
-				collision.transform.gameObject.GetComponent
-					<GasTankScript>().isHit = true;
-				//Destroy bullet object
-				Destroy(gameObject);
-			}
-		}
-
-		private IEnumerator DestroyTimer()
+        private IEnumerator DestroyTimer()
 		{
 			//Wait random time based on min and max values
 			yield return new WaitForSeconds

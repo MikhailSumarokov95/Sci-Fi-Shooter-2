@@ -2802,6 +2802,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5945075783314535407, guid: 3a0cc59f94d0e3d4d959c8ef15e625c9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a0cc59f94d0e3d4d959c8ef15e625c9, type: 3}
 --- !u!224 &418065081 stripped
@@ -3701,7 +3706,7 @@ GameObject:
   - component: {fileID: 772603376}
   - component: {fileID: 772603375}
   m_Layer: 5
-  m_Name: SuperGrenate
+  m_Name: SuperGrenade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6664,17 +6669,17 @@ PrefabInstance:
     - target: {fileID: 5132610617262956799, guid: a5b4f9a9515729049a88bf3bf8072402,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.000225
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5132610617262956799, guid: a5b4f9a9515729049a88bf3bf8072402,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.000225
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5132610617262956799, guid: a5b4f9a9515729049a88bf3bf8072402,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.000225
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5132610617262956799, guid: a5b4f9a9515729049a88bf3bf8072402,
         type: 3}
@@ -7742,6 +7747,11 @@ PrefabInstance:
     - target: {fileID: 5817975876021828339, guid: 3a0cc59f94d0e3d4d959c8ef15e625c9,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5945075783314535407, guid: 3a0cc59f94d0e3d4d959c8ef15e625c9,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -9072,6 +9082,11 @@ PrefabInstance:
     - target: {fileID: 5817975876021828339, guid: 3a0cc59f94d0e3d4d959c8ef15e625c9,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5945075783314535407, guid: 3a0cc59f94d0e3d4d959c8ef15e625c9,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -16729,7 +16744,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2751027687928120844}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.3
   m_Height: 1.8
@@ -32291,7 +32306,12 @@ MonoBehaviour:
   - Enemy: {fileID: -1467012406765832777, guid: 59f519ae4f2801d4889cd8b05b1fac95,
       type: 3}
     SpawnCount: 0
-  boss: {fileID: 6661937146283005854, guid: b490d684731de1a45941d194452fc966, type: 3}
+  - Enemy: {fileID: 1658097233275845831, guid: a9912cf1432b0f04988b7d3983dd617b, type: 3}
+    SpawnCount: 0
+  - Enemy: {fileID: -6115109703763733030, guid: e1dd0888f364bfc45a0b878215c8e77c,
+      type: 3}
+    SpawnCount: 0
+  boss: {fileID: 0}
   countWave: 3
   plusEnemyWithLevel: 1
   enemySpawnPoints:
@@ -34621,6 +34641,16 @@ PrefabInstance:
     - target: {fileID: 5817975876021828339, guid: 3a0cc59f94d0e3d4d959c8ef15e625c9,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5817975876082378196, guid: 3a0cc59f94d0e3d4d959c8ef15e625c9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5945075783314535407, guid: 3a0cc59f94d0e3d4d959c8ef15e625c9,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

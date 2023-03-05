@@ -4,7 +4,8 @@ using System.Collections;
 
 public class RangedWeapon : Weapon
 {
-    [SerializeField] protected GameObject bullet;
+    [SerializeField] protected GameObject bulletPrefs;
+    [SerializeField] protected float bulletImpulse;
     [SerializeField] protected Transform barrel;
     [SerializeField] protected int magazineSize = 20;
     private int _restOfBulletInMagazine;
@@ -25,9 +26,10 @@ public class RangedWeapon : Weapon
         if (_restOfBulletInMagazine < 1) StartCoroutine(Reloading());
 
         var targetAttack = targetObj.transform.position + 
-            new Vector3(0f, targetObj.GetComponent<CapsuleCollider>().height * 0.85f, 0f) - barrel.transform.position;
+            new Vector3(0f, targetObj.GetComponent<CapsuleCollider>().height * 0.9f, 0f) - barrel.transform.position;
 
-        Instantiate(bullet, barrel.position, Quaternion.LookRotation(targetAttack));
+        var bullet = Instantiate(bulletPrefs, barrel.position, Quaternion.LookRotation(targetAttack));
+        bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * bulletImpulse;
 
         _animator.SetTrigger("Attack");
 

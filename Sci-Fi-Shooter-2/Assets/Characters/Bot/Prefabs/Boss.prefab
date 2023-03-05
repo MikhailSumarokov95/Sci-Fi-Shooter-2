@@ -116,7 +116,7 @@ GameObject:
   - component: {fileID: -8892929403262766382}
   - component: {fileID: 1994871862235006748}
   m_Layer: 0
-  m_Name: SM_Chr_BR_BigAlien_02
+  m_Name: Boss
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
