@@ -2683,8 +2683,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5229955, y: 2, z: 0.6399067}
-  m_Center: {x: 0.12706447, y: 0, z: -0.04136944}
+  m_Size: {x: 0.5229955, y: 1.4045876, z: 0.6399067}
+  m_Center: {x: 0.12706447, y: -0.2977073, z: -0.04136944}
 --- !u!1001 &418065080
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2839,7 +2839,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 427140528}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.23, y: -6.94, z: -11.9}
+  m_LocalPosition: {x: 4.25, y: 3.01, z: 12.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6165,8 +6165,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5499569, y: 2, z: 1.9448465}
-  m_Center: {x: 0.005737486, y: 0, z: -0.052154258}
+  m_Size: {x: 0.49196255, y: 1.3968554, z: 1.9448465}
+  m_Center: {x: -0.023259697, y: -0.30157387, z: -0.052154258}
 --- !u!1 &1405168428
 GameObject:
   m_ObjectHideFlags: 0
@@ -6947,8 +6947,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5499568, y: 2, z: 0.6399067}
-  m_Center: {x: -0.021224737, y: 0, z: -0.04136944}
+  m_Size: {x: 0.5499568, y: 1.4026545, z: 0.6399067}
+  m_Center: {x: -0.021224737, y: -0.29867384, z: -0.04136944}
 --- !u!1001 &1593051719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8776,7 +8776,7 @@ MonoBehaviour:
   grenadesUnlimited: 0
   grenadeTotal: 10
   grenadeSpawnOffset: 1
-  grenadePrefab: {fileID: 1948591290861370, guid: bd6c55fdcdaebf848917e31fbcc88cbc,
+  grenadePrefab: {fileID: 1948591290861370, guid: 7b04fe350ed10a741a1e245447860d9e,
     type: 3}
   superGrenadePrefab: {fileID: 1948591290861370, guid: 9a2bd76ae78d6524885baddfb2d4a4e0,
     type: 3}
@@ -32303,11 +32303,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delayAfterEndWave: 6
   enemiesSpawn:
-  - Enemy: {fileID: -1467012406765832777, guid: 59f519ae4f2801d4889cd8b05b1fac95,
-      type: 3}
-    SpawnCount: 0
-  - Enemy: {fileID: 1658097233275845831, guid: a9912cf1432b0f04988b7d3983dd617b, type: 3}
-    SpawnCount: 0
   - Enemy: {fileID: -6115109703763733030, guid: e1dd0888f364bfc45a0b878215c8e77c,
       type: 3}
     SpawnCount: 0

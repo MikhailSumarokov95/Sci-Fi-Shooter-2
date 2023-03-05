@@ -32,11 +32,15 @@ public class RangedWeapon : Weapon
 
     public override void Attack(GameObject targetObj)
     {
-        if (_isPostShotDelay) return;
-
         if (_isReloading) return;
 
-        if (_restOfBulletInMagazine < 1) StartCoroutine(Reloading());
+        if (_restOfBulletInMagazine < 1)
+        {
+            StartCoroutine(Reloading());
+            return;
+        }
+
+        if (_isPostShotDelay) return;
 
         var targetAttack = targetObj.transform.position + 
             new Vector3(0f, targetObj.GetComponent<CapsuleCollider>().height * 0.9f, 0f) - barrel.transform.position;
