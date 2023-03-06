@@ -5,7 +5,7 @@ public class KillCounter : MonoBehaviour
 {
     [SerializeField] private TMP_Text counterText;
     private int _sumKilled;
-    private SpawnManager _spawnManager;
+    private SpawnBots _spawnManager;
 
     private int _sumKilledPerWave;
     public int SumKilledPerWave { get { return _sumKilledPerWave; } set { _sumKilledPerWave = value; } }
@@ -18,7 +18,7 @@ public class KillCounter : MonoBehaviour
 
     private void OnEnable()
     {
-        _spawnManager = FindObjectOfType<SpawnManager>();
+        _spawnManager = FindObjectOfType<SpawnBots>();
         _spawnManager.OnWaveSpawned += StartNewWave;
     }
 

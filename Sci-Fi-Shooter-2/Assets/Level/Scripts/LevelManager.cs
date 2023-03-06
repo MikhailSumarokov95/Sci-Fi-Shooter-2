@@ -19,7 +19,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private GameObject lossPanel;
     [SerializeField] private GameObject shopBanner;
     [SerializeField] private TMP_Text currentWaveText;
-    private SpawnManager _spawnManager;
+    private SpawnBots _spawnManager;
 
     [SerializeField] private State _stateGame = State.Game;
     public State StateGame { get { return _stateGame; } set { _stateGame = value; } }
@@ -34,7 +34,7 @@ public class LevelManager : MonoBehaviour
 
     private void OnEnable()
     {
-        _spawnManager = FindObjectOfType<SpawnManager>();
+        _spawnManager = FindObjectOfType<SpawnBots>();
         _spawnManager.OnWavesOver += WinGame;
         _spawnManager.OnWaveEnd += EndWave;
     }
