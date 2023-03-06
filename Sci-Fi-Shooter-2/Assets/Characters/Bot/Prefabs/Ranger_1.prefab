@@ -1348,7 +1348,7 @@ MonoBehaviour:
   prefabFlashParticles: {fileID: 4834526503407549940, guid: 2735bebe54c1f5a4096f5134a96f7e77,
     type: 3}
   flashParticlesCount: 5
-  fireAudioPref: {fileID: 2870398075622592044, guid: e5fcd8f672837cb45a5da60cf1866e8c,
+  fireAudioPref: {fileID: 4943307206675395056, guid: e5fcd8f672837cb45a5da60cf1866e8c,
     type: 3}
 --- !u!1 &1538899480408717126
 GameObject:

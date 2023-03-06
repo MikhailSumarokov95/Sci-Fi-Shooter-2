@@ -77,7 +77,7 @@ public class RangedWeapon : Weapon
         if (particles != null)
             particles.Emit(flashParticlesCount);
 
-        var fireAudio = Instantiate(fireAudioPref, barrel);
+        var fireAudio = Instantiate(fireAudioPref.gameObject, barrel.position, barrel.rotation);
         Destroy(fireAudio, fireAudio.GetComponent<AudioSource>().clip.length);
     }
 

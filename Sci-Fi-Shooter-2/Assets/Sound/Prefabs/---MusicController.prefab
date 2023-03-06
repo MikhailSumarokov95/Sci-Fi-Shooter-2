@@ -46,3 +46,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backGroundPref: {fileID: 8102113692248625250, guid: c861e231d592ac942905cf4905c148a5,
     type: 3}
+  volumeBackGround: 0.5

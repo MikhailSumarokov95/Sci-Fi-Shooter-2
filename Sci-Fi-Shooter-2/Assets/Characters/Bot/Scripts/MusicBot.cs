@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class MusicZombie : MonoBehaviour
+public class MusicBot : MonoBehaviour
 {
     private Coroutine _playerMusicCorotine;
     private AudioSource _audioSource;
