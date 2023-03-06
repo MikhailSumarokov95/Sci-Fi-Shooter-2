@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 914233914153664657}
   - component: {fileID: 6282269832409689015}
   - component: {fileID: 2541485526513716591}
-  - component: {fileID: 6231996034870265099}
   m_Layer: 5
   m_Name: Add_Value
   m_TagString: Untagged
@@ -137,19 +136,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &6231996034870265099
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2187876959787551729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0779fdcfc4ade214a84512b568669f47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: PriceSuperGrenade
 --- !u!1 &5817975875372168507
 GameObject:
   m_ObjectHideFlags: 0

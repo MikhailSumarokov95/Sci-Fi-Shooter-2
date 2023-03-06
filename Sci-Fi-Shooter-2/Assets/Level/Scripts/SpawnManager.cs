@@ -18,7 +18,7 @@ public class SpawnManager : MonoBehaviour
 
     [SerializeField] private int delayAfterEndWave = 6;
     [SerializeField] private int countWave = 3;
-    [SerializeField] private int plusEnemyWithLevel = 1;
+    [SerializeField] private float plusEnemyWithLevel = 1;
 
     private Life[] _currentEnemyLife;
     private bool _isAllEnemiesKilled;
@@ -66,7 +66,9 @@ public class SpawnManager : MonoBehaviour
         {
             var numberSpawnPoint = 0;
 
-            for (var j = 0; j < spawnEnemy[i].Count + _level.CurrentLevel * plusEnemyWithLevel; j++)
+            var countEnemy = (int)(spawnEnemy[i].Count + _level.CurrentLevel * plusEnemyWithLevel);
+
+            for (var j = 0; j < countEnemy; j++)
             {
                 var spawnPoint = spawnEnemy[i].SpawnPoints[numberSpawnPoint];
 

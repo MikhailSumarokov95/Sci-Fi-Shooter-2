@@ -8,6 +8,7 @@ public class RangedWeapon : Weapon
 
     [Range(0, 100)]
     [SerializeField] private int hitProbability = 50;
+    [SerializeField] private int increaseHitProbabilityPerLevel = 2;
 
     [Title(label: "Bullet")]
 
@@ -38,6 +39,8 @@ public class RangedWeapon : Weapon
         spawnedParticlesPrefab.transform.localEulerAngles = default;
 
         particles = spawnedParticlesPrefab.GetComponent<ParticleSystem>();
+
+        hitProbability += FindObjectOfType<Level>().CurrentLevel * increaseHitProbabilityPerLevel;
     }
 
     public override void Attack(GameObject targetObj)

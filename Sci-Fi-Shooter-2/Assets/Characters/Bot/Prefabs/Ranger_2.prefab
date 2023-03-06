@@ -1123,11 +1123,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _distanceAttack: 15
+  magazineSize: 20
+  hitProbability: 30
+  increaseHitProbabilityPerLevel: 2
   bulletPrefs: {fileID: 4049326381340815823, guid: 8312dac9642af3b4ab4b8f890118f59f,
     type: 3}
   bulletImpulse: 400
   barrel: {fileID: 1297921297611421611}
-  magazineSize: 20
   prefabFlashParticles: {fileID: 4834526503407549940, guid: 2735bebe54c1f5a4096f5134a96f7e77,
     type: 3}
   flashParticlesCount: 5

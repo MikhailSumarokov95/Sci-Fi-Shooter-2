@@ -1851,7 +1851,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _distanceAttack: 50
   magazineSize: 1
-  hitProbability: 50
+  hitProbability: 30
+  increaseHitProbabilityPerLevel: 2
   bulletPrefs: {fileID: 4049326381340815823, guid: 740b50858fb7fac4e8cbfde64b6adc96,
     type: 3}
   bulletImpulse: 400

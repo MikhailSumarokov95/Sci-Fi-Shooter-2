@@ -3261,7 +3261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.17310214, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3801,7 +3801,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &558254712
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5310,6 +5310,46 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontSize
       value: 25.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 741500751217077405, guid: 33900a84e71521646b27712fcdb49d19,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 741500751217077405, guid: 33900a84e71521646b27712fcdb49d19,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3865764721405640824, guid: 33900a84e71521646b27712fcdb49d19,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3865764721405640824, guid: 33900a84e71521646b27712fcdb49d19,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7992034522657302545, guid: 33900a84e71521646b27712fcdb49d19,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 7992034522657302545, guid: 33900a84e71521646b27712fcdb49d19,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -300
+      objectReference: {fileID: 0}
+    - target: {fileID: 7992034522657302545, guid: 33900a84e71521646b27712fcdb49d19,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7992034522657302545, guid: 33900a84e71521646b27712fcdb49d19,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -145
       objectReference: {fileID: 0}
     - target: {fileID: 8031448075730440303, guid: 33900a84e71521646b27712fcdb49d19,
         type: 3}
@@ -10852,7 +10892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.17310214, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -34057,7 +34097,7 @@ MonoBehaviour:
     - {fileID: 6661539}
   delayAfterEndWave: 6
   countWave: 3
-  plusEnemyWithLevel: 1
+  plusEnemyWithLevel: 0.2
 --- !u!1 &5984687363587542652
 GameObject:
   m_ObjectHideFlags: 0
