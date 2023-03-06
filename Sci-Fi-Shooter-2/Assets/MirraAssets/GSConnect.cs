@@ -18,19 +18,7 @@ public class GSConnect : MonoBehaviour {
     /// <summary>
     /// Полностью отключает звук и игру.
     /// </summary>
-    public static bool Pause {
-        get => Time.timeScale == 0;
-        set {
-            Time.timeScale = value ? 0 : 1;
-            AudioListener.pause = value;
-        }
-    }
-
-    // Ключи для переменных игрока:
-
-    //public const string
-    //    NameKey = "key-name",
-    //    ScoreKey = "key-score";
+    public static bool Pause { set { AudioListener.pause = value; } }
 
     // Ключи для rewarded награды:
 
