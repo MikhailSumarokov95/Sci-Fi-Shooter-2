@@ -31,7 +31,7 @@ public class SuperGrenadeShop : MonoBehaviour
         CurrentCount = Progress.LoadSuperGrenades();
     }
 
-    public void TryRewardOne()
+    public void TryRewardFive()
     {
         GSConnect.Purchase(GSConnect.SuperGrenade);
     }
@@ -39,6 +39,13 @@ public class SuperGrenadeShop : MonoBehaviour
     public void RewardOne()
     {
         CurrentCount++;
+
+        addSuperGrenadeImage.SetActive(true);
+    }
+
+    public void RewardCount(int value)
+    {
+        CurrentCount += 0;
 
         addSuperGrenadeImage.SetActive(true);
     }

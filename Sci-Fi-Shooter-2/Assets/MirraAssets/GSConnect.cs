@@ -296,7 +296,7 @@ public class GSConnect : MonoBehaviour {
                 break;
 
             case SuperGrenade:
-                FindObjectOfType<SuperGrenadeShop>().RewardOne();
+                FindObjectOfType<SuperGrenadeShop>().RewardCount(5);
                 break;
         }
 
