@@ -953,7 +953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _distanceAttack: 2
-  damage: 20
+  damage: 10
 --- !u!1 &7100688910972616182
 GameObject:
   m_ObjectHideFlags: 0
