@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -5,6 +6,7 @@ using TMPro;
 
 public class HealthPoints : MonoBehaviour
 {
+    public Action OnTakeDamage;
     [SerializeField] private Slider healthBar;
     [SerializeField] private int currentHealth;
     [SerializeField] private TMP_Text currentHealthText;
@@ -55,6 +57,8 @@ public class HealthPoints : MonoBehaviour
 
         if (!_corotuneDelayTimerAfterHit) 
             StartCoroutine(DelayTimerAfterHit());
+
+        OnTakeDamage?.Invoke();
     }
 
     public void TakeHealth(int health)
