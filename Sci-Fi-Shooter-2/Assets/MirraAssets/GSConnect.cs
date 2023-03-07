@@ -31,10 +31,10 @@ public class GSConnect : MonoBehaviour {
     // Ключи для внутриигровых покупок:
 
     public const string
-        GrenadeLauncher = "GrenadeLauncher",
-        RocketLauncher = "RocketLauncher",
-        Battlepass = "Battlepass",
-        SuperGrenade = "SuperGrenade";
+        GrenadeLauncher = nameof(GrenadeLauncher),
+        RocketLauncher = nameof(RocketLauncher),
+        Battlepass = nameof(Battlepass),
+        SuperGrenade = nameof(SuperGrenade);
 
     //Свойства для чтения / записи переменных игрока:
 

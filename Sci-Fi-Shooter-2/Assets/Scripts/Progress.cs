@@ -20,33 +20,23 @@ public static class Progress
 
     public static void SaveWeaponsSelected(WeaponsSelected weapons)
     {
-        Debug.Log(weapons);
-        Debug.Log(JsonUtility.ToJson(weapons));
-
         GSPrefs.SetString(weaponsSelected, JsonUtility.ToJson(weapons).ToString());
         GSPrefs.Save();
     }
 
     public static WeaponsSelected LoadWeaponsSelected()
     {
-        Debug.Log(GSPrefs.GetString(weaponsSelected, DefaultWeaponsSelected));
-
         return JsonUtility.FromJson<WeaponsSelected>(GSPrefs.GetString(weaponsSelected, DefaultWeaponsSelected));
     }
 
     public static void SaveWeaponsBought(WeaponsBought weapons)
     {
-        Debug.Log(weapons);
-        Debug.Log(JsonUtility.ToJson(weapons));
-
         GSPrefs.SetString(weaponsBought, JsonUtility.ToJson(weapons).ToString());
         GSPrefs.Save();
     }
 
     public static WeaponsBought LoadWeaponsBought()
     {
-        Debug.Log(GSPrefs.GetString(weaponsBought, DefaultWeaponsBought));
-
         return JsonUtility.FromJson<WeaponsBought>(GSPrefs.GetString(weaponsBought, DefaultWeaponsBought));
     }
 
