@@ -25,7 +25,7 @@ public class SearchMeshRenderer : MonoBehaviour
 
                 meshLod.SetLODs(meshLods);
 
-                meshLod.size = ((int)(meshLod.size * 100)) / 100;
+                meshLod.size = ((int)(meshLod.size * 1000)) / 1000;
             }
         }
     }
