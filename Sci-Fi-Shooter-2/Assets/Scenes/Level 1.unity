@@ -2600,6 +2600,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 1658401780995976772}
+    - target: {fileID: 3773670718655505607, guid: e20f4256845b1604aa609dd34aa9ba37,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnTryInventoryNextMobile
       objectReference: {fileID: 0}
     - target: {fileID: 6284274625858623712, guid: e20f4256845b1604aa609dd34aa9ba37,
         type: 3}
@@ -7782,7 +7787,7 @@ PrefabInstance:
     - target: {fileID: 3681910847235061456, guid: 6090920c731dfa64a99dc43e9aa48a21,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3681910847235061456, guid: 6090920c731dfa64a99dc43e9aa48a21,
         type: 3}
@@ -8244,7 +8249,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1405168429
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10191,7 +10196,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d6801dde8ccc314abaedc530cf1a89d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _alfaImageStart: 200
+  alfaImageStart: 0.7
+  decayRate: 0.5
   bloodEffect:
   - {fileID: 766955255}
   - {fileID: 1755983137}
@@ -12029,7 +12035,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1658401780995976772}
         m_TargetAssemblyTypeName: InfimaGames.LowPolyShooterPack.Character, Assembly-CSharp
         m_MethodName: OnTryThrowSuperGrenateMobile
         m_Mode: 1
@@ -12944,7 +12950,7 @@ PrefabInstance:
     - target: {fileID: 5154821697352265025, guid: 030279b3e7363ba42bfe936ce12bc17c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5154821697352265025, guid: 030279b3e7363ba42bfe936ce12bc17c,
         type: 3}
@@ -40465,7 +40471,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1658401780995976772}
         m_TargetAssemblyTypeName: InfimaGames.LowPolyShooterPack.Character, Assembly-CSharp
         m_MethodName: TryPlayReloadMobile
         m_Mode: 1
@@ -42280,7 +42286,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1658401780995976772}
         m_TargetAssemblyTypeName: InfimaGames.LowPolyShooterPack.Character, Assembly-CSharp
         m_MethodName: OnTryThrowGrenateMobile
         m_Mode: 1
