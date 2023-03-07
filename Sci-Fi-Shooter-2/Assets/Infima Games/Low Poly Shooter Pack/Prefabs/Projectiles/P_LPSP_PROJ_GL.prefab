@@ -374,7 +374,7 @@ MonoBehaviour:
   useConstantForce: 0
   constantForceSpeed: 0
   explodeAfter: 0
-  explosionPrefab: {fileID: 4811645123968692, guid: d22eb04ac3ee43046965b5bd10926bcd,
+  explosionPrefab: {fileID: 4811645123968692, guid: 301583a5af63a494298d60cd9f296909,
     type: 3}
   force: 2500
   despawnTime: 30

@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New Sprite Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 633ed33db0dc545d4b0d558848f4fd39, type: 3}
+    - {fileID: 2800000, guid: 46ee185d88544254db408cafe6592e2b, type: 3}
+    - {fileID: 2800000, guid: 35c41e51cf1203745928662fb1c6883e, type: 3}
+    - {fileID: 2800000, guid: 0bb2c727d388a084abff2616f8897a2d, type: 3}
+    - {fileID: 2800000, guid: e665f7846c733fe4492dca7314f4f0fb, type: 3}
+    - {fileID: 2800000, guid: dddd8515982758b4babf47301a18f60c, type: 3}
+    - {fileID: 2800000, guid: 79096ec1824663441ab741107ecf7435, type: 3}
+    - {fileID: 2800000, guid: 68bcfa09f41e33444a7f4c810f572b02, type: 3}
+    - {fileID: 2800000, guid: 553112281fa473f4b90fe65e4c2455ad, type: 3}
+    - {fileID: 2800000, guid: 6c8f68f01d57b11479944591b9dfc4ec, type: 3}
+    - {fileID: 2800000, guid: 808a8fc01f39b784dbf80509c3c9f534, type: 3}
+    - {fileID: 2800000, guid: 396b50eb6dfe246cba1ce8c87d0a6b64, type: 3}
+    - {fileID: 2800000, guid: f110274c92e1647f98824bd1b6431a42, type: 3}
+    - {fileID: 2800000, guid: e6fc0e35a1531433c959f8a14d0f27f5, type: 3}
+    - {fileID: 2800000, guid: 23c5e1f2db09446878ba993f587251b2, type: 3}
+    - {fileID: 2800000, guid: 23f22ae8a92844167bdc4fa33c8038d6, type: 3}
+    - {fileID: 2800000, guid: 35353173726174d45a219a6080c66a6c, type: 3}
+    - {fileID: 2800000, guid: 54b8ca64807c74964929b0b3be011b1d, type: 3}
+    - {fileID: 2800000, guid: ecfa64867736f4e269dad79ea468d2f4, type: 3}
+    - {fileID: 2800000, guid: 6d1b8aa54c4bf4e3697a5acdead28c58, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 808a8fc01f39b784dbf80509c3c9f534, type: 3}
+  - {fileID: 21300000, guid: 6c8f68f01d57b11479944591b9dfc4ec, type: 3}
+  - {fileID: 21300000, guid: 35c41e51cf1203745928662fb1c6883e, type: 3}
+  - {fileID: 21300000, guid: 79096ec1824663441ab741107ecf7435, type: 3}
+  - {fileID: 21300000, guid: 23c5e1f2db09446878ba993f587251b2, type: 3}
+  - {fileID: 21300000, guid: 35353173726174d45a219a6080c66a6c, type: 3}
+  - {fileID: 21300000, guid: 54b8ca64807c74964929b0b3be011b1d, type: 3}
+  - {fileID: 21300000, guid: e665f7846c733fe4492dca7314f4f0fb, type: 3}
+  - {fileID: 21300000, guid: dddd8515982758b4babf47301a18f60c, type: 3}
+  - {fileID: 21300000, guid: e6fc0e35a1531433c959f8a14d0f27f5, type: 3}
+  - {fileID: 21300000, guid: 6d1b8aa54c4bf4e3697a5acdead28c58, type: 3}
+  - {fileID: 21300000, guid: ecfa64867736f4e269dad79ea468d2f4, type: 3}
+  - {fileID: 21300000, guid: 0bb2c727d388a084abff2616f8897a2d, type: 3}
+  - {fileID: 21300000, guid: 553112281fa473f4b90fe65e4c2455ad, type: 3}
+  - {fileID: 21300000, guid: 23f22ae8a92844167bdc4fa33c8038d6, type: 3}
+  - {fileID: 21300000, guid: 68bcfa09f41e33444a7f4c810f572b02, type: 3}
+  - {fileID: 21300000, guid: 396b50eb6dfe246cba1ce8c87d0a6b64, type: 3}
+  - {fileID: 21300000, guid: f110274c92e1647f98824bd1b6431a42, type: 3}
+  - {fileID: 21300000, guid: 633ed33db0dc545d4b0d558848f4fd39, type: 3}
+  - {fileID: 21300000, guid: 46ee185d88544254db408cafe6592e2b, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Sniper-03
+  - Sniper-01
+  - AR-03
+  - SMG-02
+  - Background_ScreenGlow
+  - Play_Joystick_Skill_Slider_4_FillArea
+  - Play_Joystick_Direction02
+  - HandGun-01
+  - RL_01
+  - Play_Joystick_Direction01
+  - Play_Joystick_Skill_00_n
+  - Play_Joystick_Icon_Attack_n
+  - GL-01
+  - SMG-05
+  - Play_Joystick_Skill_Slider_4_Fill_n
+  - SMG-04
+  - Btn_IconTextButton_SlantSquare04_s
+  - Play_Joystick_Attack_00_n
+  - Image_Glow_Circle01_White
+  - AR-02
+  m_RenderDataMap: {}
+  m_Tag: New Sprite Atlas
+  m_IsVariant: 0
